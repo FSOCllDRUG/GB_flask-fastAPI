@@ -1,0 +1,25 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интернет-магазин</title>
+</head>
+<body>
+<header>
+    <h1>Интернет-магазин обуви и одежды</h1>
+</header>
+
+<nav>
+    <a href="{{ url_for('clothing') }}">Одежда</a>
+    <a href="{{ url_for('shoes') }}">Обувь</a>
+</nav>
+
+{% block content %}
+{% endblock %}
+
+<footer>
+    <p>&copy; Все права защищены.</p>
+</footer>
+</body>
+</html>
